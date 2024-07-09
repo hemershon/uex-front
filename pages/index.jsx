@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 import { useRouter } from 'next/router';
+import Link from 'next/link'; // Importe o Link do Next.js
 
 const LoginForm = () => {
   const [formData, setFormData] = useState({ email: '', password: '' });
@@ -69,6 +70,12 @@ const LoginForm = () => {
               Login
             </button>
           </form>
+          <p className="text-center mt-3">
+            Não tem uma conta?{' '}
+            <Link href="/signup">
+              Crie uma conta
+            </Link>
+          </p>
         </div>
       </div>
     </div>
