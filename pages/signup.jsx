@@ -1,9 +1,11 @@
-import SignUpForm from '../components/SignUpForm'; 
+// pages/signup.jsx
 
-const HomePage = () => {
+import SignUpForm from '../components/SignUpForm';
+
+const SignUpPage = () => {
   return (
     <div className="container">
-      <h1 className="text-center mt-5">Bem-vindo ao meu aplicativo!</h1>
+      <h1 className="text-center mt-5">Crie sua conta</h1>
       <div className="row justify-content-center mt-5">
         <div className="col-md-6">
           <SignUpForm />
@@ -13,4 +15,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default SignUpPage;
